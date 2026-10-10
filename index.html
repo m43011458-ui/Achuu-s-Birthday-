@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffe6ef">
+<title>For Achuuu Babyyy 💗</title>
+<style>
+:root{--pink:#ff6f9f;--deep:#c83e72;--cream:#fff8fb;--ink:#5b3044;--soft:#ffe6ef}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:radial-gradient(circle at 15% 5%,#fff 0,transparent 30%),linear-gradient(135deg,#fff6fa,#ffe3ed 55%,#fff8fb);overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.wrap{width:min(920px,100%);margin:auto;padding:22px 17px 70px}
+.hero{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font:600 .72rem Arial,sans-serif;color:#b64b76}
+h1{font-size:clamp(2.6rem,10vw,5.5rem);line-height:.98;margin:18px 0;color:var(--deep);font-weight:500}
+h1 span{display:block;font-style:italic;color:#ed6e9a}
+.subtitle{font-size:1.15rem;line-height:1.7;max-width:540px;margin:8px auto 24px}
+.btn{border:0;border-radius:999px;padding:14px 22px;background:var(--deep);color:white;box-shadow:0 9px 22px #c83e7233;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:#fff;color:var(--deep);border:1px solid #ffd0df;box-shadow:none}
+.heart{font-size:2.3rem;animation:beat 1.5s infinite;display:inline-block}
+@keyframes beat{50%{transform:scale(1.18)}}
+.float{position:absolute;color:#f29abb;opacity:.65;animation:drift 6s ease-in-out infinite}
+.f1{left:7%;top:22%;font-size:2rem}.f2{right:8%;top:28%;font-size:1.4rem;animation-delay:1s}.f3{left:14%;bottom:19%;font-size:1.2rem;animation-delay:2s}.f4{right:12%;bottom:17%;font-size:2rem;animation-delay:.5s}
+@keyframes drift{50%{transform:translateY(-16px) rotate(8deg)}}
+section{margin:28px 0;padding:28px 20px;border:1px solid #fff;background:#ffffffb8;border-radius:25px;box-shadow:0 15px 45px #b93f6b0d}
+h2{text-align:center;font-weight:500;font-size:clamp(1.8rem,6vw,2.5rem);color:var(--deep);margin:0 0 12px}
+.lead{text-align:center;line-height:1.7;margin:0 auto 24px;max-width:610px}
+.envelope-area{text-align:center;padding:14px 0}
+.envelope{width:190px;height:132px;margin:16px auto 20px;position:relative;background:#ffb5cd;border-radius:7px;box-shadow:0 12px 24px #b93f6b1c;display:grid;place-items:center;font-size:3rem;cursor:pointer}
+.envelope:before{content:"";position:absolute;inset:0;background:#ff8db2;clip-path:polygon(0 0,50% 56%,100% 0);border-radius:7px 7px 0 0}
+.envelope span{z-index:1;margin-top:30px}
+.letter{display:none;text-align:left;max-width:620px;margin:20px auto 0;background:#fff9fc;padding:24px;border-radius:18px;border:1px dashed #f2a6c0;line-height:1.85;white-space:pre-line}
+.letter.open{display:block;animation:fade .6s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.photo-grid,.gift-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.photo{min-height:150px;border-radius:17px;background:linear-gradient(145deg,#ffe4ee,#fff7fa);border:1px dashed #ed9db8;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12px;overflow:hidden}
+.photo img{width:100%;height:190px;object-fit:cover;border-radius:12px}
+.photo input{width:100%;font: .75rem Arial,sans-serif;margin-top:10px}
+.photo strong{font-size:1.05rem}.photo small{font: .78rem Arial,sans-serif;color:#9d5d76;margin-top:7px}
+.gift{border:1px solid #ffd4e2;background:#fff7fa;border-radius:18px;padding:19px 12px;text-align:center;color:var(--ink);min-height:150px;transition:transform .2s}
+.gift:hover{transform:translateY(-3px)}
+.gift .emoji{font-size:2.2rem;display:block;margin-bottom:9px}
+.gift p{font-size:.9rem;line-height:1.5;margin:8px 0 0}
+.reveal{display:none;padding:13px;margin-top:12px;background:#fff;border-radius:12px;line-height:1.6;animation:fade .4s}
+.reveal.show{display:block}
+.music-row{text-align:center;line-height:1.7}
+.note{font: .82rem/1.6 Arial,sans-serif;color:#9c6378;text-align:center;margin-top:12px}
+.final{text-align:center;background:linear-gradient(135deg,#fff0f6,#ffe0eb)}
+.final-msg{font-size:1.2rem;line-height:1.8;max-width:600px;margin:18px auto}
+footer{text-align:center;padding:24px 0;color:#a75d7b;font-size:.9rem}
+#confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:10}
+.conf{position:absolute;top:-20px;animation:fall 3.5s linear forwards;font-size:20px}
+@keyframes fall{to{transform:translateY(110vh) rotate(500deg);opacity:0}}
+@media(min-width:700px){section{padding:36px}.photo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.photo{min-height:205px}.photo img{height:230px}}
+@media(max-width:380px){.photo-grid,.gift-grid{grid-template-columns:1fr}.hero{min-height:80vh}}
+</style>
+</head>
+<body>
+<div id="confetti"></div>
+<main class="wrap">
+  <header class="hero">
+    <span class="float f1">♡</span><span class="float f2">✧</span><span class="float f3">♡</span><span class="float f4">✦</span>
+    <div class="heart">💗</div>
+    <div class="eyebrow">A little piece of my heart, made just for you</div>
+    <h1>Happy Birthday,<span>Achuuu Babyyy</span></h1>
+    <p class="subtitle">For my Sarangi — even when miles separate us, you still make my world feel softer, warmer, and full of love.</p>
+    <button class="btn" onclick="document.querySelector('#letter-section').scrollIntoView({behavior:'smooth'})">Open your surprise ↓</button>
+    <p class="note">Made with all my love · October 31, 2026</p>
+  </header>
+
+  <section id="letter-section">
+    <h2>A letter for you 💌</h2>
+    <p class="lead">There’s something I want you to read, slowly, with all the love I’m sending your way.</p>
+    <div class="envelope-area">
+      <div class="envelope" role="button" tabindex="0" aria-label="Open the love letter" onclick="openLetter()" onkeydown="if(event.key==='Enter'||event.key===' '){openLetter()}"><span>💌</span></div>
+      <button class="btn" id="letter-btn" onclick="openLetter()">Tap to open your letter</button>
+      <article class="letter" id="letter">
+My Achuuu Babyyy, 💗
+
+Happy birthday, my Sarangi. I wish I could be right beside you today, hold your hand, see your smile up close, and make this day as special as you make my life. Until I can do that, I made you this little corner of the internet — a tiny place that belongs only to us.
+
+Distance may keep me from giving you a hug whenever I want, but it can never make you less important to me. You are in my thoughts in the little moments, in the random smiles, and in all the plans I make for the future.
+
+I hope this new year of your life brings you gentle days, big happiness, confidence, and every beautiful thing your heart has been wishing for. And when a day feels hard, I hope you remember that somewhere, someone is cheering for you with his whole heart.
+
+Thank you for being you, Achuuu. You are so, so special to me. If I could wish for one thing today, it would be to see you happy — and to get to celebrate many more birthdays with you.
+
+Happy birthday, babyyy. Until I can hold you in person, imagine the biggest hug and the sweetest kiss coming all the way from me. 🫂💋
+
+Forever sending you love,
+Your person ❤️
+      </article>
+    </div>
+    <p class="note">You can edit this letter in the HTML file to make every line sound more like you.</p>
+  </section>
+
+  <section id="memories">
+    <h2>Our little memories 📸</h2>
+    <p class="lead">Add your favourite photos here. Tap “Choose photo” and pick pictures from your phone or computer. They stay in this page while it is open; to include them in the published site, replace the photo placeholders in the project files as explained in the guide.</p>
+    <div class="photo-grid">
+      <div class="photo" id="photo-box-1"><strong>Our favourite moment ✨</strong><small>A memory I never want to forget</small><input type="file" accept="image/*" onchange="previewPhoto(event,1)" aria-label="Choose first photo"></div>
+      <div class="photo" id="photo-box-2"><strong>Your beautiful smile 🌷</strong><small>My favourite view</small><input type="file" accept="image/*" onchange="previewPhoto(event,2)" aria-label="Choose second photo"></div>
+      <div class="photo" id="photo-box-3"><strong>Us, always 💞</strong><small>One more little memory</small><input type="file" accept="image/*" onchange="previewPhoto(event,3)" aria-label="Choose third photo"></div>
+    </div>
+  </section>
+
+  <section id="gifts">
+    <h2>Little gifts for you 🎁</h2>
+    <p class="lead">Three tiny things you can open whenever you need a reminder of how loved you are.</p>
+    <div class="gift-grid">
+      <button class="gift" onclick="toggleGift(1)"><span class="emoji">💗</span><strong>Gift 1: A reason</strong><div class="reveal" id="gift-1">I love the way you make ordinary moments feel special just by being part of them.</div></button>
+      <button class="gift" onclick="toggleGift(2)"><span class="emoji">🫂</span><strong>Gift 2: A hug</strong><div class="reveal" id="gift-2">Close your eyes for a second. Imagine me wrapping you in the longest, safest hug and not letting go too soon.</div></button>
+      <button class="gift" onclick="toggleGift(3)"><span class="emoji">🌙</span><strong>Gift 3: A promise</strong><div class="reveal" id="gift-3">I’ll keep finding little ways to make you feel close, even on days when the distance feels extra big.</div></button>
+      <button class="gift" onclick="toggleGift(4)"><span class="emoji">🎀</span><strong>Bonus: Your wish</strong><div class="reveal" id="gift-4">Make a birthday wish, babyyy. I hope life brings you closer to every dream you have. ✨</div></button>
+    </div>
+  </section>
+
+  <section id="music">
+    <h2>A little birthday soundtrack 🎶</h2>
+    <p class="lead">A quiet moment, just for you. Add your song by choosing an audio file below. Browsers need a tap before music can play.</p>
+    <div class="music-row">
+      <input id="audio-file" type="file" accept="audio/*" aria-label="Choose background music">
+      <p><button class="btn secondary" onclick="toggleMusic()">▶ Play / pause music</button></p>
+      <audio id="music-player" loop></audio>
+      <p class="note">Choose a song you both love. The music file you select locally won't automatically be included when you share the website.</p>
+    </div>
+  </section>
+
+  <section class="final" id="final">
+    <h2>One last thing, my love… 💖</h2>
+    <p class="final-msg">Out of all the places in the world, you are still one of my favourite places to be — even from far away.</p>
+    <button class="btn" onclick="showFinal()">Tap for your final surprise ✨</button>
+    <div class="reveal" id="final-reveal">
+      <p style="font-size:1.35rem;color:#c83e72">Happy birthday, Sarangi! 💗</p>
+      You deserve to feel celebrated today and every day. Distance is only where we are — it doesn't measure how much you mean to me. I love you, Achuuu Babyyy. Sending you all my kisses, hugs, and love until I can give them to you for real. 💋🫂
+      <p class="heart">💗</p>
+    </div>
+  </section>
+  <footer>Made with love, just for Achuuu Babyyy ♡<br><span id="footer-date"></span></footer>
+</main>
+<script>
+function openLetter(){
+  const letter=document.getElementById('letter');
+  letter.classList.add('open');
+  document.getElementById('letter-btn').textContent='Your letter is open 💗';
+  letter.scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+function toggleGift(n){document.getElementById('gift-'+n).classList.toggle('show')}
+function showFinal(){
+  document.getElementById('final-reveal').classList.add('show');
+  burst();
+}
+function burst(){
+  const layer=document.getElementById('confetti');
+  const bits=['💗','💕','♡','✨','🌸'];
+  for(let i=0;i<34;i++){
+    const el=document.createElement('span');el.className='conf';el.textContent=bits[Math.floor(Math.random()*bits.length)];
+    el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*.8+'s';el.style.fontSize=(14+Math.random()*18)+'px';
+    layer.appendChild(el);setTimeout(()=>el.remove(),4500);
+  }
+}
+function previewPhoto(event,n){
+  const file=event.target.files&&event.target.files[0];if(!file)return;
+  const url=URL.createObjectURL(file);const box=document.getElementById('photo-box-'+n);
+  box.innerHTML='';const img=document.createElement('img');img.src=url;img.alt='Selected memory '+n;box.appendChild(img);
+  const label=document.createElement('small');label.textContent=file.name;box.appendChild(label);
+  const input=document.createElement('input');input.type='file';input.accept='image/*';input.setAttribute('aria-label','Change photo '+n);input.onchange=e=>previewPhoto(e,n);box.appendChild(input);
+}
+const audioInput=document.getElementById('audio-file'),player=document.getElementById('music-player');
+audioInput.addEventListener('change',()=>{const f=audioInput.files&&audioInput.files[0];if(f){player.src=URL.createObjectURL(f);player.play().catch(()=>{});}});
+function toggleMusic(){if(!player.src){audioInput.click();return}if(player.paused)player.play().catch(()=>{});else player.pause()}
+document.getElementById('footer-date').textContent='October 31, 2026 · Our little universe';
+</script>
+</body>
+</html>
